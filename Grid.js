@@ -2,6 +2,13 @@ const GRID_SIZE = 4
 const CELL_SIZE = 20
 const CELL_GAP = 2
 
+let totalScore = 0;
+const scoreElement = document.createElement("div");
+scoreElement.classList.add("score");
+scoreElement.textContent = "Score: 0";
+document.body.appendChild(scoreElement);
+
+
 export default class Grid {
   #cells
 
